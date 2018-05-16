@@ -1,7 +1,9 @@
+'Gustavo Tejerina
+
 Public url, path, i
 
 i = 0
-'Número de iteraciones
+'NÃºmero de iteraciones
 limit = 100
 
 While i < limit
@@ -16,13 +18,13 @@ While i < limit
 
 	Set wshshell = WScript.CreateObject("WScript.Shell")
 
-	'Marcado de opción
+	'Marcado de opciÃ³n
 	WScript.Sleep 5000
 	IE.Application.document.getElementById("enquesta-ENQUESTA344605768_enq1_opcio-2").Click
 	WScript.Sleep 1000
 	Set oInputs = IE.Application.document.getElementsByTagName("input")
 	
-	'Envío de submit
+	'EnvÃ­o de submit
 	For Each elm In oInputs
 		If elm.Value = "Vota" Then
 			elm.Click
@@ -32,7 +34,7 @@ While i < limit
 
 	WScript.Sleep 2000
 
-	'Finalización de proceso de IE
+	'FinalizaciÃ³n de proceso de IE
 	WshShell.Exec("taskkill /fi ""imagename eq iexplore.exe""")
 	
 Wend	
