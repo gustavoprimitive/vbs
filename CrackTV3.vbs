@@ -1,5 +1,4 @@
 'VBScript que automatiza desde Internet Explorer la carga de un formulario de encuesta, la elección de la opción deseada y el envío de la misma.
-'Gustavo Tejerina
 
 Public url, path, i
 
